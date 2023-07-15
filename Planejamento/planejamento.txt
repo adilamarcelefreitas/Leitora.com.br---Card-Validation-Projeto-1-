@@ -1,0 +1,13 @@
+13/07/2023
+
+- Instalar Git + Gitdesktop + terminal + nodejs;
+- Executar e atualizar o VS code;
+- Fazer protótipo de baixa qualidade;
+- Organizar o repositório e fazer o fork e clonar;
+- Ler o README do projeto Card Validation.
+
+14/07/2023
+
+- Fazer protótiopo de alta qualidade (usar o CANVA);
+- Estudar comandos do terminal Linux;
+-  
