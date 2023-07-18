@@ -1,0 +1,34 @@
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+
+    background-color: #c791ce;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    
+}
+ 
+
+.bloco-superior img {
+
+    width: 40px; /* Define a largura da imagem */
+    height: 40px; /* Define a altura da imagem */
+    
+    
+}
+
+.bloco-superior p {
+
+    margin: 0; /* Remove as margens padrão do parágrafo */
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.agradecimento {
+
+
+}
