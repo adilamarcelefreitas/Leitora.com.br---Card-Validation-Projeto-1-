@@ -3,7 +3,7 @@ import validator from './validator.js';
 console.log(validator);
 
 document.querySelector('.número-cartão-input').oninput = () =>{
-    document.querySelector('.número-cartão-box').innerText = document.querySelector('.número-cartão-input').value;
+    document.querySelector('.número-cartão').innerText = document.querySelector('.número-cartão-input').value;
 }
 
 document.querySelector('.nome-cartão-input').oninput = () =>{
@@ -25,7 +25,7 @@ document.querySelector('.cvv-input').onmouseenter = () =>{
 
 document.querySelector('.cvv-input').onmouseleave = () =>{
     document.querySelector('.frente').style.transform = 'perspective(1000px) rotateY(0deg)';
-    document.querySelector('.atrás').style.transform = 'perspective(1000px) rotateY(180deg)';
+    document.querySelector('.').style.transform = 'perspective(1000px) rotateY(180deg)';
 }
 
 document.querySelector('.cvv-input').oninput = () =>{

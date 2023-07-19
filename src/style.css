@@ -1,51 +1,46 @@
+*{
+    font-family: monospace;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
 header {
 
     background-color: #c791ce;
     text-align: left;
     padding: 10px;
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
 
 .bloco-superior p {
 
-    margin: 0; /* Remove as margens padrão do parágrafo */
+    margin: 0;
     font-weight: bolder;
     font-size: 25px;
 }
 
-main {
-
-
-}
 .agradecimento {
 
-display: flex;
+
+padding-top: 100px;
 background-color: #f3f1f3;
 width: 100%;
-font-size: 30px;
+font-size: 25px;
 text-align: center;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 
 }
 
-.agradecimento img {
+main {
 
-    width: 25%; /* Define a largura da imagem */
-    height: 25%; /* Define a altura da imagem */
-    
-    
-}
-
-*{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    outline: none; border: none;
-    text-decoration: none;
-    text-transform: uppercase;
+    padding-top: 100px;
+    padding-right: 25px;
 }
 
 .container{
@@ -91,13 +86,13 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     gap:15px;
 }
 
-.container form .flexbox .inputBox{
+.container form .flexbox .inputBox {
     flex:1 1 150px;
 }
 
-.container form .submeter-btn{
+.container form .submeter-btn {
     width: 100%;
-    background:linear-gradient(45deg, blueviolet, deeppink);
+    background:linear-gradient(45deg, blueviolet, rgb(99, 44, 73));
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
@@ -105,6 +100,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 10px;
     cursor: pointer;
     transition: .2s linear;
+    text-align: center;
 }
 
 .container form .submeter-btn:hover {
@@ -168,7 +164,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     top:0; left: 0;
     height: 100%;
     width: 100%;
-    background:linear-gradient(45deg, blueviolet, deeppink);
+    background:linear-gradient(45deg, blueviolet,  rgb(99, 44, 73));
     border-radius: 5px;
     padding: 20px 0;
     text-align: right;
