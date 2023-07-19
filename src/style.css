@@ -13,7 +13,7 @@ header {
     background-color: #c791ce;
     text-align: left;
     padding: 10px;
-    display: flex;
+    text-decoration-color: #655168;
     
 }
 
@@ -23,27 +23,34 @@ header {
     margin: 0;
     font-weight: bolder;
     font-size: 25px;
+    color: #3e2c41
 }
 
-.agradecimento {
+.fonte {
 
-
-padding-top: 100px;
-background-color: #f3f1f3;
-width: 100%;
-font-size: 25px;
-text-align: center;
-
-
+    font-size: 25px;
+    color: #3e2c41;
 }
 
 main {
 
-    padding-top: 100px;
-    padding-right: 25px;
+    padding-top: 70px;
+    background-color: #f3f1f3;
+    text-align: center;
+    
+}
+
+
+
+footer {
+
+    text-align: center;
+    background-color: #c791ce;
+
 }
 
 .container{
+
     min-height: 100vh;
     background: #eee;
     display: flex;
@@ -54,6 +61,7 @@ main {
 }
 
 .container form{
+
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0,0,0,.1);
@@ -63,34 +71,40 @@ main {
 }
 
 .container form .inputBox{
+
     margin-top: 20px;
 }
 
 .container form .inputBox span{
+
     display: block;
-    color:#999;
+    color: #3e2c41;
     padding-bottom: 5px;
 }
 
 .container form .inputBox input,
 .container form .inputBox select{
+
     width: 100%;
     padding: 10px;
     border-radius: 10px;
     border:1px solid rgba(0,0,0,.3);
-    color:#444;
+    color: #3e2c41
 }
 
 .container form .flexbox{
+
     display: flex;
     gap:15px;
 }
 
 .container form .flexbox .inputBox {
+
     flex:1 1 150px;
 }
 
 .container form .submeter-btn {
+
     width: 100%;
     background:linear-gradient(45deg, blueviolet, rgb(99, 44, 73));
     margin-top: 20px;
@@ -104,11 +118,13 @@ main {
 }
 
 .container form .submeter-btn:hover {
+
     letter-spacing: 2px;
     opacity: .8;
 }
 
 .container .cartão-container {
+
     margin-bottom: -150px;
     position: relative;
     height: 250px;
@@ -116,6 +132,7 @@ main {
 }
 
 .container .cartão-container .frente {
+
     position: absolute;
     height: 100%;
     width: 100%;
@@ -129,37 +146,44 @@ main {
     transition:transform .4s ease-out;
 }
 
-.container .cartão-container .frente .imagem {
+.container .cartão-container .frente .image {
+
     display: flex;
     align-items:center;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-.container .cartão-container .frente .imagem img {
+.container .cartão-container .frente .image img {
+
     height: 50px;
 }
 
 .container .cartão-container .frente .número-cartão {
+
     padding:30px 0;
     font-size: 22px;
     color:#fff;
 }
 
-.container .cartão-container .frente .flexbox{
+.container .cartão-container .frente .flexbox {
+
     display: flex;
 }
 
 .container .cartão-container .frente .flexbox .box:nth-child(1) {
+
     margin-right: auto;
 }
 
 .container .cartão-container .frente .flexbox .box {
+
     font-size: 15px;
     color:#fff;
 }
 
-.container .cartão-container .atrás{
+.container .cartão-container .atrás {
+
     position: absolute;
     top:0; left: 0;
     height: 100%;
@@ -175,6 +199,7 @@ main {
 }
 
 .container .cartão-container .atrás .lista {
+
     background: #000;
     width: 100%;
     margin: 10px 0;
@@ -186,11 +211,13 @@ main {
 }
 
 .container .cartão-container .atrás .box span {
+
     color:#fff;
     font-size: 15px;
 }
 
 .container .cartão-container .atrás .box .cvv-box {
+
     height: 50px;
     padding: 10px;
     margin-top: 5px;
@@ -201,6 +228,7 @@ main {
 }
 
 .container .cartão-container .atrás .box img {
+
     margin-top: 30px;
     height: 30px;
 }
