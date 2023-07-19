@@ -10,4 +10,18 @@
 
 - Fazer protótiopo de alta qualidade (usar o CANVA);
 - Estudar comandos do terminal Linux;
--  
+-vídeo aulas de git e github;
+
+
+17/07/2023
+
+-estudei html e.js
+-Aprendi a fazer commit, push e outros comandos no terminal do git;
+-codar o html e css;
+
+18/07/2023
+
+-finalizei o html;
+-finalizei o css;
+-inicicar o .js;
+
