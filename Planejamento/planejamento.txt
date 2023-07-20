@@ -25,3 +25,9 @@
 -finalizei o css;
 -inicicar o .js;
 
+19/07/2023 
+
+-resolvi bug da rotação do cartão;
+-finalizei o css e html;
+- finalizei o DOM no index.js;
+- reogarnizar ideias para criação das funções;

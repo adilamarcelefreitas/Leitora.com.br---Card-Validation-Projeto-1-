@@ -146,7 +146,7 @@ footer {
     transition:transform .4s ease-out;
 }
 
-.container .cartão-container .frente .image {
+.container .cartão-container .frente .imagem {
 
     display: flex;
     align-items:center;
@@ -154,9 +154,10 @@ footer {
     padding-top: 10px;
 }
 
-.container .cartão-container .frente .image img {
+.container .cartão-container .frente .imagem img {
 
     height: 50px;
+    
 }
 
 .container .cartão-container .frente .número-cartão {

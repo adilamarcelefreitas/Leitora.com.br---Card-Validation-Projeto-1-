@@ -33,9 +33,9 @@
         <div class="cartão-container">
     
             <div class="frente">
-                <div class="image">
-                    <img src="image/chip.png" alt="">
-                    <img src="image/visa.png" alt="">
+                <div class="imagem">
+                    <img src="chip.png" alt="">
+                    <img src="mastercard.png" alt="">
                 </div>
                 <div class="número-cartão">###############</div>
                 <div class="flexbox">
@@ -58,7 +58,7 @@
                 <div class="box">
                     <span>cvv</span>
                     <div class="cvv-box"></div>
-                    <img src="image/visa.png" alt="">
+                    <img src="mastercard.png" alt="">
                 </div>
             </div>
     
@@ -75,7 +75,7 @@
             </div>
             <div class="flexbox">
                 <div class="inputBox">
-                    <span>vencimento mês</span>
+                    <span>mês</span>
                     <select name="" id="" class="mês-input">
                         <option value="mês" selected disabled>mês</option>
                         <option value="01">01</option>
@@ -93,7 +93,7 @@
                     </select>
                 </div>
                 <div class="inputBox">
-                    <span>vencimento ano</span>
+                    <span>ano</span>
                     <select name="" id="" class="ano-input">
                         <option value="ano" selected disabled>ano</option>
                         <option value="2021">2021</option>
@@ -113,13 +113,18 @@
                     <input type="texto" maxlength="3" class="cvv-input">
                 </div>
             </div>
+            <div class="validation-status"></div>
             <input type="submeter" value="submeter" class="submeter-btn">
+            
         </form>
     
     </div> 
 
     </main>
+
     <footer>© leitora.com.br - 2023</footer>
+
     <script src="index.js" type="module"></script>
+
   </body>
 </html>

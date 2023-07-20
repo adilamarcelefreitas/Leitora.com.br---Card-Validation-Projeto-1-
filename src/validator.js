@@ -1,41 +1,39 @@
-
 const validator = {
-}
-  /*
-  maskify: function (creditCardNumber) {
-      const visibleDigits = 4;
-      if (creditCardNumber.length <= visibleDigits) {
-          return creditCardNumber;
+    // Function to validate a credit card number using the Luhn algorithm
+    isValidCreditCard: function (creditCardNumber) {
+      // Remove any non-digit characters
+      const cleanedNumber = creditCardNumber.replace(/\D/g, '');
+  
+      // Check if the cleaned number is empty or not a number
+      if (cleanedNumber === '' || isNaN(cleanedNumber)) {
+        return false;
       }
-
-      const maskedPart = '#'.repeat(creditCardNumber.length - visibleDigits) + creditCardNumber.slice(-visibleDigits);
-      return maskedPart;
-  },
-
-  isValidCreditCard: function (creditCardNumber) {
-      if (!/^\d+$/.test(creditCardNumber)) {
-          return false; 
-      }
-
-      const reversedDigits = creditCardNumber.split('').reverse().map(Number);
+  
       let sum = 0;
-
-      for (let i = 0; i < reversedDigits.length; i++) {
-          let digit = reversedDigits[i];
-
-          if (i % 2 !== 0) {
-              digit *= 2;
-              if (digit > 9) {
-                  digit -= 9;
-              }
+      let shouldDouble = false;
+  
+      // Iterate through the digits in reverse order
+      for (let i = cleanedNumber.length - 1; i >= 0; i--) {
+        let digit = parseInt(cleanedNumber.charAt(i), 10);
+  
+        if (shouldDouble) {
+          digit *= 2;
+  
+          // If doubling the digit results in a two-digit number,
+          // sum the digits of the result
+          if (digit > 9) {
+            digit -= 9;
           }
-
-          sum += digit;
+        }
+  
+        sum += digit;
+        shouldDouble = !shouldDouble;
       }
-
+  
+      // The credit card number is valid if the sum is divisible by 10
       return sum % 10 === 0;
-  }
-};
-*/
-export default validator;
-
+    },
+  };
+  
+  export default validator;
+  
