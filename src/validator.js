@@ -1,37 +1,41 @@
 const validator = {
-    // Function to validate a credit card number using the Luhn algorithm
-    isValidCreditCard: function (creditCardNumber) {
-      // Remove any non-digit characters
-      const cleanedNumber = creditCardNumber.replace(/\D/g, '');
+    // Função para validar o cartão usando o algoritmo Luhn
+    isValidCreditCard: function (númeroCartão) {
+      
+      // variável remove caracteres não numéricos etc
+      const novoNúmero = númeroCartão.replace(/\D/g, '');
   
-      // Check if the cleaned number is empty or not a number
-      if (cleanedNumber === '' || isNaN(cleanedNumber)) {
+      // Verifica se está vazio ou não é um número
+      if (novoNúmero === '' || isNaN(novoNúmero)) {
         return false;
       }
   
-      let sum = 0;
-      let shouldDouble = false;
+      //Duas váriavéis para fazer as condicionais
+      let soma = 0;
+      let dobrarNúmero = false;
   
-      // Iterate through the digits in reverse order
-      for (let i = cleanedNumber.length - 1; i >= 0; i--) {
-        let digit = parseInt(cleanedNumber.charAt(i), 10);
+      // Interar os dígitos na ordem inversa 
+      //usar parseInt para pegar o número da const novoNúmero e reconhever entre 0-9
+      //usar charArt para pegar dígito dentro da variável let n
+      for (let n = novoNúmero.length - 1; n >= 0; n--) {
+        let dígito = parseInt(novoNúmero.charAt(n), 10);
   
-        if (shouldDouble) {
-          digit *= 2;
+        if (dobrarNúmero) {
+          dígito *= 2;
   
-          // If doubling the digit results in a two-digit number,
-          // sum the digits of the result
-          if (digit > 9) {
-            digit -= 9;
+          // Se dobrar o resultado em um número de dois dígitos, somar os dígitos do resultado
+          if (dígito > 9) {
+            dígito -= 9;
           }
         }
-  
-        sum += digit;
-        shouldDouble = !shouldDouble;
+        // adicionar o valor da variável dígito na variavel soma
+        soma += dígito;
+        //inverter o valor da variável. Se o valor for verdadeira ele retorna falso, se for falso retorna verdadeiro
+        dobrarNúmero = !dobrarNúmero;
       }
   
-      // The credit card number is valid if the sum is divisible by 10
-      return sum % 10 === 0;
+      // O cartão será válido se a soma for divísivel por 10. Se for e o final for igual a 0 dá certo
+      return soma % 10 === 0;
     },
   };
   

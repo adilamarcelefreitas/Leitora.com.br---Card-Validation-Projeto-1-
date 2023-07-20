@@ -41,24 +41,26 @@ document.querySelector('.cvv-input').oninput = () =>{
 import validator from './validator.js';
 
 // Função que atualiza se o cartão é válido ou inválido com destque de cores
-function updateValidationStatus(isValid) {
-  const validationStatus = document.querySelector('.validation-status');
-  validationStatus.innerText = isValid ? 'Valid' : 'Invalid';
-  validationStatus.style.color = isValid ? 'green' : 'red';
+//uma variável chamada statusValidação para pegar a class no html com do DOM
+// fazer validar ou invalidar o cartão com a resposta e com mudança de cor
+function updateValidaçãoStatus(éVálido) {
+  const statusValidação = document.querySelector('.validação-status');
+  statusValidação.innerText = éVálido ? 'cartão válido' : 'cartão inválido';
+  statusValidação.style.color = éVálido ? 'green' : 'red';
 }
 
-// Evento feito com o click de submeter no html 
+// Evento de validação feito com o butão submeter chamado pelo seletor do DOM
 document.querySelector('.submeter-btn').addEventListener('click', function (event) {
   event.preventDefault();
 
-  // Pega os números do cartão 
-  const creditCardNumber = document.querySelector('.número-cartão-input').value;
+  //variável para pega os números do cartão 
+  const númeroCartãoCrédito = document.querySelector('.número-cartão-input').value;
 
   // Checa se o cartão de crédito é válido, usando a função validator
-  const isValid = validator.isValidCreditCard(creditCardNumber);
+  const éVálido = validator.isValidCreditCard(númeroCartão);
 
-  // Update so status da validação do cartão
-  updateValidationStatus(isValid);
+  // Update do status da validação do cartão
+  updateValidaçãoStatus(éVálido);
 });
 
 console.log(validator);
