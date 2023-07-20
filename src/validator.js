@@ -1,6 +1,6 @@
 const validator = {
     // Função para validar o cartão usando o algoritmo Luhn
-    isValidCreditCard: function (númeroCartão) {
+    isValid: function (númeroCartão) {
       
       // variável remove caracteres não numéricos etc
       const novoNúmero = númeroCartão.replace(/\D/g, '');
@@ -37,7 +37,22 @@ const validator = {
       // O cartão será válido se a soma for divísivel por 10. Se for e o final for igual a 0 dá certo
       return soma % 10 === 0;
     },
-  };
+
+    maskify: function (numeração) {
+      //variavél para pegar número do cartão e utilizar a String para ter certeza q é uma string e remover caracteres não númericos 
+      const númerosCartão = String(numeração).replace(/\D/g, '');
+      
+      // variável para manter apenas os últimos quatro números do cartão
+      const últimoQuatroDígitos = númerosCartão.slice(-4);
   
+      //Criar uma variavel para mascarar dos números com # e concatenar(juntar) com os últimos 4 dígitos
+      const númeroMascarado = ' ############' + últimoQuatroDígitos;
+  
+      return númeroMascarado;
+  
+  }
+  };
+
+
   export default validator;
   

@@ -1,9 +1,21 @@
-
+import validator from './validator.js';
 
 //Inserir o número do cartão
 document.querySelector('.número-cartão-input').oninput = () =>{
-    document.querySelector('.número-cartão').innerText = document.querySelector('.número-cartão-input').value;
+//document.querySelector('.número-cartão').innerText = document.querySelector('.número-cartão-input').value;
+    const inputNúmeroCartão = document.querySelector('.número-cartão-input');
+    const númeroMascarado = validator.maskify(inputNúmeroCartão.value);
+    document.querySelector('.número-cartão').innerText = númeroMascarado;
 }
+
+//
+// function atualizarMascaraNúmeroCartão() {
+
+//     const inputNúmeroCartão = document.querySelector('.número-cartão-input');
+//     const númeroMascarado = validator.maskify(inputNúmeroCartão.value);
+//     document.querySelector('.número-cartão').innerText = númeroMascarado;
+
+// }hy
 
 //Inserir o nome do usuário
 document.querySelector('.nome-cartão-input').oninput = () =>{
@@ -37,9 +49,6 @@ document.querySelector('.cvv-input').oninput = () =>{
     document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
 }
 
-
-import validator from './validator.js';
-
 // Função que atualiza se o cartão é válido ou inválido com destque de cores
 //uma variável chamada statusValidação para pegar a class no html com do DOM
 // fazer validar ou invalidar o cartão com a resposta e com mudança de cor
@@ -57,10 +66,46 @@ document.querySelector('.submeter-btn').addEventListener('click', function (even
   const númeroCartãoCrédito = document.querySelector('.número-cartão-input').value;
 
   // Checa se o cartão de crédito é válido, usando a função validator
-  const éVálido = validator.isValidCreditCard(númeroCartão);
+  const éVálido = validator.isValid(númeroCartãoCrédito);
 
   // Update do status da validação do cartão
   updateValidaçãoStatus(éVálido);
 });
+
+//Função para máscarar os números do cartão
+
+function marcararCartãoCrédito(numeração) {
+    //variavél para pegar número do cartão e utilizar a String para ter certeza q é uma string e remover caracteres não númericos 
+    const númerosCartão = String(numeração).replace(/\D/g, '');
+    //A condicional quer dizer que se caso o número do cartão não for igual a 16 de ve retornar inválido
+    if (númerosCartão.length !== 16) {
+        return '';
+    }
+    // variável para manter apenas os últimos quatro números do cartão
+    const últimoQuatroDígitos = númerosCartão.slice(-4);
+
+    //Criar uma variavel para mascarar dos números com # e concatenar(juntar) com os últimos 4 dígitos
+    const númeroMascarado = ' ############' + últimoQuatroDígitos;
+
+    return númeroMascarado;
+
+}
+
+    // Atualiza o número do cartão exibido na frente do cartão (função???)
+
+    function atualizarMascaraNúmeroCartão() {
+
+        const inputNúmeroCartão = document.querySelector('.número-cartão-input');
+        const númeroMascarado = validator.maskify(inputNúmeroCartão.value);
+        document.querySelector('.número-cartão').innerText = númeroMascarado;
+
+    }
+
+    
+
+
+
+
+
 
 console.log(validator);
