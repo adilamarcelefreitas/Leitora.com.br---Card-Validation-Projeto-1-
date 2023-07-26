@@ -1,6 +1,5 @@
 const validator = {
   // Função para validar o cartão usando o algoritmo Luhn
-  //isValid: function (númeroCartão)
 
   isValid: function (creditCardNumber) {
 
@@ -49,7 +48,6 @@ const validator = {
     return soma % 10 === 0;
   },
 
-  //maskify: function (numeração)
 
   maskify: function (CreditCardNumber) {
     //variavél para pegar número do cartão e utilizar a String para ter certeza q é uma string e remover caracteres não númericos 
