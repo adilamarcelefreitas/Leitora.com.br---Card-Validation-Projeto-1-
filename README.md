@@ -15,7 +15,7 @@ O **"Leitora.com.br"** simula uma validação de cartão de crédito para finali
 - **Validação de Cartão de Crédito:** Verifica se o número do cartão de crédito é válido.
 - **Exibição Parcial do Número do Cartão:** Apenas os últimos 4 dígitos do cartão são visíveis, garantindo segurança.
 
-## Instruções de uso 💻
+## Instruções de uso 👩‍🏫
 
 1. Insira o número do seu **cartão de crédito** (use apenas dígitos numéricos [0-9]) para validação.
 2. Informe o **nome do titular do cartão** associado ao cartão de crédito.
@@ -23,8 +23,10 @@ O **"Leitora.com.br"** simula uma validação de cartão de crédito para finali
 4. Passe o mouse sobre o campo **CVV** para ver a parte de trás do cartão.
 5. Envie o formulário para validar o cartão de crédito.
 
+## Demonstração 🤓
+Acesse a minha [GitHub Pages](https://adilamarcelefreitas.github.io/SAP011-card-validation/src/) para experimentar o processo de Validação de Cartão de Crédito.
 
-## Testes 🤓
+## Testes ✔️
 
 - `isValid(creditCardNumber)`: Testa se o número do cartão de crédito é válido usando o algoritmo de Luhn.
 - `maskify(CreditCardNumber)`: Mascarar o número do cartão de crédito, revelando apenas os últimos 4 dígitos.
