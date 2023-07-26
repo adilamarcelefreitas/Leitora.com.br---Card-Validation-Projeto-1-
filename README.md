@@ -14,7 +14,6 @@ O **"Leitora.com.br"** simula uma validação de cartão de crédito para finali
 
 - **Validação de Cartão de Crédito:** Verifica se o número do cartão de crédito é válido.
 - **Exibição Parcial do Número do Cartão:** Apenas os últimos 4 dígitos do cartão são visíveis, garantindo segurança.
-- **Campos Não Vazios:** Todos os campos devem ser preenchidos; campos vazios não são permitidos.
 
 ## Instruções de uso 💻
 
