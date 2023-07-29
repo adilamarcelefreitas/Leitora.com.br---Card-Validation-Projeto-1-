@@ -24,7 +24,7 @@ O **"Leitora.com.br"** simula uma validação de cartão de crédito para finali
 5. Envie o formulário para validar o cartão de crédito.
 
 ## Demonstração 🤓
-Acesse a minha [GitHub Pages](https://adilamarcelefreitas.github.io/SAP011-card-validation/src/) para experimentar o processo de Validação de Cartão de Crédito.
+Acesse a minha [GitHub Pages](https://adilamarcelefreitas.github.io/Leitora.com.br---Card-Validation-Projeto-1-/src/) para experimentar o processo de Validação de Cartão de Crédito.
 
 ## Testes ✔️
 
