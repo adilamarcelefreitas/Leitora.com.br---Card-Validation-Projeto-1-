@@ -1,129 +1,123 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Selecione um metódo de pagamento</title>
+    <meta charset="utf-8" />
+    <title>Card Validator</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-    <div class="bloco-superior">
+      <div class="bloco-superior">
         <p>leitora.com.br</p>
-        </div>
+      </div>
     </header>
 
     <main>
+      <div class="logo">
+        <img src="Imagens/logo.png" />
+      </div>
 
-<div class="logo">
-        <img src="Imagens/logo.png">
-    </div>
+      <br />
 
-<br>
+      <div class="fonte">
+        <p>
+          Querida leitora, obrigada por escolher adquirir um livro conosco.
+          Ficamos muito feliz com sua decisão! Abaixo você precisará preencher
+          as <b>informações do seu cartão</b> para válida-lo.
+        </p>
+      </div>
+      <br />
 
-<div class="fonte">
-<p>Querida leitora, obrigada por escolher adquirir um livro conosco. Ficamos muito feliz com sua decisão! Abaixo você precisará preencher as <b>informações do seu cartão</b> para válida-lo.</p>
-</div>
-<br>
-
-
-    <div class="container">
-
-        <div class="cartão-container">
-    
-            <div class="frente">
-                <div class="imagem">
-                    <img src="Imagens/chip.png" alt="">
-                    <img src="Imagens/mastercard.png" alt="">
-                </div>
-                <div class="número-cartão"></div>
-                <div class="flexbox">
-                    <div class="box">
-                
-                        <div class="nome-no-cartão">Nome</div>
-                    </div>
-                    <div class="box">
-                        <span>vencimento</span>
-                        <div class="vencimento">
-                            <span class="mês">mm</span>
-                            <span class="ano">aa</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="cartao-container">
+          <div class="frente">
+            <div class="imagem">
+              <img src="Imagens/chip.png" alt="" />
+              <img src="Imagens/mastercard.png" alt="" />
             </div>
-    
-            <div class="atrás">
-                <div class="lista"></div>
-                <div class="box">
-                    <span>cvv</span>
-                    <div class="cvv-box"></div>
-                    <img src="Imagens/mastercard.png" alt="">
-                </div>
-            </div>
-    
-        </div>
-    
-        <form action="">
-            <div class="inputBox">
-                <span>número do cartão</span>
-                <input type="text" maxlength="16" class="número-cartão-input">
-            </div>
-            <div class="inputBox">
-                <span>nome no cartão</span>
-                <input type="text" class="nome-cartão-input">
-            </div>
+            <div class="numero-cartao"></div>
             <div class="flexbox">
-                <div class="inputBox">
-                    <span>mês</span>
-                    <select name="" id="" class="mês-input">
-                        <option value="mês" selected disabled>mês</option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <option value="04">04</option>
-                        <option value="05">05</option>
-                        <option value="06">06</option>
-                        <option value="07">07</option>
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
+              <div class="box">
+                <div class="nome-no-cartao">Nome</div>
+              </div>
+              <div class="box">
+                <span>Vencimento</span>
+                <div class="vencimento">
+                  <span class="mes">mm</span>
+                  <span class="ano">aa</span>
                 </div>
-                <div class="inputBox">
-                    <span>ano</span>
-                    <select name="" id="" class="ano-input">
-                        <option value="ano" selected disabled>ano</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2028</option>
-                        <option value="2029">2029</option>
-                        <option value="2030">2030</option>
-                    </select>
-                </div>
-                <div class="inputBox">
-                    <span>cvv</span>
-                    <input type="texto" maxlength="3" class="cvv-input">
-                </div>
+              </div>
             </div>
-            <div class="validação-status"></div>
-            <input type="submeter" value="submeter" class="submeter-btn">
-            
-        </form>
-    
-    </div> 
+          </div>
 
+          <div class="atras">
+            <div class="tarja"></div>
+            <div class="box">
+              <span>cvv</span>
+              <div class="cvv-box"></div>
+              <img src="Imagens/mastercard.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <span>número do cartão</span>
+            <input type="text" maxlength="16" class="numero-cartao-input" />
+          </div>
+          <div class="inputBox">
+            <span>nome no cartão</span>
+            <input type="text" class="nome-cartao-input" />
+          </div>
+          <div class="flexbox">
+            <div class="inputBox">
+              <span>mês</span>
+              <select name="" id="" class="mes-input">
+                <option value="mes" selected disabled>mês</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class="inputBox">
+              <span>ano</span>
+              <select name="" id="" class="ano-input">
+                <option value="ano" selected disabled>ano</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+            </div>
+            <div class="inputBox">
+              <span>cvv</span>
+              <input type="texto" maxlength="3" class="cvv-input" />
+            </div>
+          </div>
+          <div class="validaçao-status"></div>
+          <input type="submeter" value="submeter" class="submeter-btn" />
+        </form>
+      </div>
     </main>
 
-    <footer>© leitora.com.br - 2023</footer>
+    <footer>©leitora.com.br - 2023</footer>
 
     <script src="index.js" type="module"></script>
-
   </body>
 </html>
